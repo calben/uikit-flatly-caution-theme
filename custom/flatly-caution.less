@@ -1,0 +1,89 @@
+@import "../../src/less/uikit.theme.less";
+
+//
+// General
+//
+
+@global-background: #151515;
+@global-muted-background: #000000;
+@global-border: #ffff00;
+@global-border-radius: 0px;
+
+//
+// Typography
+//
+
+@global-font-family:                            -apple-system, "Montserrat", Arial, sans-serif;
+@global-color: #eeeeee;
+@global-primary-color: #ffff00;
+@global-emphasis-color: #ffffff;
+@global-muted-color: #aaaaaa;
+@global-text-shadow: #dddddd;
+@global-link-color: #199eff;
+@global-link-hover-color: #199eff;
+@global-contrast-color: #101010;
+
+//
+// Buttons, Navs & Badges
+//
+
+@button-default-background: @global-muted-background;
+@global-primary-background: #ffff00;
+@button-secondary-background: #404040;
+@global-success-background: #20dd47;
+@global-danger-background: #cc1814;
+@global-secondary-background-color: #404040;
+
+@button-default-hover-background:               lighten(@button-default-background, 10%);
+@button-default-active-background:              lighten(@button-default-background, 20%);
+@button-primary-hover-background:               @global-link-hover-color;
+@button-primary-active-background:              lighten(@button-primary-hover-background, 10%);
+@button-secondary-hover-background:             lighten(@button-secondary-background, 5%);
+@button-secondary-active-background:            lighten(@button-secondary-background, 10%);
+@button-danger-hover-background:                lighten(@button-danger-background, 5%);
+@button-danger-active-background:               lighten(@button-danger-background, 10%);
+
+//
+// Base
+//
+
+@base-body-font-weight: normal;
+@base-selection-background: #199eff;
+
+//
+// Block
+//
+
+@block-primary-background: #199eff;
+@block-muted-background: #202020;
+
+//
+// Icon
+//
+
+@icon-font-path: "../../fonts";
+
+//
+// Button
+//
+
+@button-primary-color: @global-background;
+@button-primary-hover-color: @global-muted-background;
+
+//
+// Card
+//
+
+@card-primary-color: @global-background;
+
+//
+// Navbar
+//
+
+@navbar-nav-item-active-color: @global-primary-color;
+
+// 
+// Utility
+//
+
+@logo-color: @global-primary-color;
