@@ -6,7 +6,9 @@
 
 @global-background: #181818;
 @global-muted-background: #000000;
-@global-border: #ffff00;
+@global-dark-grey: #303030;
+@global-dark-blue: #12517F;
+@global-border: @global-muted-color;
 @global-border-radius: 0px;
 
 //
@@ -22,6 +24,7 @@
 @global-link-color: #199eff;
 @global-link-hover-color: #199eff;
 @global-contrast-color: #101010;
+@base-code-color: lighten(@global-primary-color, 40%);
 
 //
 // Buttons, Navs & Badges
@@ -74,17 +77,19 @@
 // Card
 //
 
-@card-default-background: @global-muted-background;
-@card-primary-color: @global-background;
-@card-primary-title-color: @global-background;
+@card-default-background: @global-contrast-color;
+@card-primary-background: @global-dark-blue;
 
+.hook-card-default 
+{
+    box-shadow: 0 14px 25px rgba(0,0,0,0.16);
+}
 
 //
 // Alert
 //
 
-@alert-color: @global-color;
-@alert-primary-background: @global-primary-background;
+@alert-primary-background: @global-dark-blue;
 @alert-primary-color: @global-background;
 
 //
@@ -97,7 +102,18 @@
 // Navbar
 //
 
+@navbar-nav-item-height:                        60px;
 @navbar-nav-item-active-color: @global-primary-color;
+
+//
+// Section
+// 
+
+@section-primary-background: @global-dark-blue;
+
+.hook-section-primary() {
+    color: @global-background;
+}
 
 // 
 // Utility
